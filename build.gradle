@@ -1,0 +1,88 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.2'
+        
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+ext {
+    applicationId = 'skeleton.maurya.com.mvvmskeleton'
+//    kotlin_version = '1.2.30'
+    min_sdk_version = 21
+    target_sdk_version = 27
+    compiled_sdk_version = 27
+    buildtoolVersion = '27.0.3'
+    version_code = 1
+    version_name = "1.0"
+    app_id = 1
+    mkLoaderVersion = '1.4.0'
+    supportLibVersion = '27.1.1'
+    constraint_layout = '1.1.3'
+    glideVersion = '4.3.0'
+    coreJackson = '2.7.+'
+    daggerVersion = '2.+'
+    liveDataVersion = '1.1.1'
+    retrofitVersion = '2.3.0'
+    okhttp3Version = '3.8.0'
+    calligraphyVersion = '2.+'
+
+
+    extraDependencies = [
+//            kotlin           : "org.jetbrains.kotlin:kotlin-stdlib-jre7:${kotlin_version}",
+
+calligraphy      : "uk.co.chrisjenx:calligraphy:${calligraphyVersion}",
+
+retrofit         : "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+retrofitGson     : "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+mkloader         : "com.tuyenmonkey:mkloader:${mkLoaderVersion}",
+okhttp3          : "com.squareup.okhttp3:logging-interceptor:${okhttp3Version}",
+okhttp3Url       : "com.squareup.okhttp3:okhttp-urlconnection:${okhttp3Version}",
+coreJackson      : "com.fasterxml.jackson.core:jackson-core:${coreJackson}",
+jacksonAnnotation: "com.fasterxml.jackson.core:jackson-annotations:${coreJackson}",
+glide            : "com.github.bumptech.glide:glide:${glideVersion}",
+jacksonDatabind  : "com.fasterxml.jackson.core:jackson-databind:${coreJackson}",
+    ]
+
+    googlePlayDependencies = [
+            supportV4        : "com.android.support:support-v4:${supportLibVersion}",
+            recyclerview     : "com.android.support:recyclerview-v7:${supportLibVersion}",
+            cardview         : "com.android.support:cardview-v7:${supportLibVersion}",
+            design           : "com.android.support:design:${supportLibVersion}",
+            appCompat        : "com.android.support:appcompat-v7:${supportLibVersion}",
+            constraint_layout: "com.android.support.constraint:constraint-layout:${constraint_layout}",
+            cardView         : "com.android.support:cardview-v7:${supportLibVersion}",
+    ]
+
+    archCoreDependencies = [
+            runtime               : "android.arch.lifecycle:runtime:${liveDataVersion}",
+            extensions            : "android.arch.lifecycle:extensions:${liveDataVersion}",
+            compiler              : "android.arch.lifecycle:compiler:${liveDataVersion}",
+
+            dagger                : "com.google.dagger:dagger:${daggerVersion}",
+            daggerandroid         : "com.google.dagger:dagger-android:${daggerVersion}",
+            daggerandroidsupport  : "com.google.dagger:dagger-android-support:${daggerVersion}",
+            daggercompiler        : "com.google.dagger:dagger-compiler:${daggerVersion}",
+            daggerandroidprocessor: "com.google.dagger:dagger-android-processor:${daggerVersion}",
+    ]
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

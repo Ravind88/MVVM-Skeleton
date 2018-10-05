@@ -1,0 +1,100 @@
+apply plugin: 'com.android.application'
+
+//apply plugin: 'kotlin-android'
+
+//apply plugin: 'kotlin-android-extensions'
+
+android {
+
+    compileSdkVersion compiled_sdk_version
+
+    defaultConfig {
+        applicationId applicationId
+        minSdkVersion min_sdk_version
+        targetSdkVersion target_sdk_version
+        versionCode version_code
+        versionName version_name
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    dataBinding {
+        enabled = true
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            useProguard true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            useProguard true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    flavorDimensions "versionCode"
+    flavorDimensions "appId"
+
+    productFlavors {
+        QA {
+            dimension "versionCode"
+            dimension "appId"
+            //   manifestPlaceholders = [SCHEMA_SITE_BASE_URL: "hostname.com"]
+            buildConfigField "String", "BASE_URL", '"http://rogersdev.techaheadcorp.com/api/"'
+        }
+
+        Production {
+            dimension "versionCode"
+            dimension "appId"
+            // manifestPlaceholders = [SCHEMA_SITE_BASE_URL: "host.name"]
+            buildConfigField "String", "BASE_URL", '"http://rogersdev.techaheadcorp.com/api/"'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+//    implementation extraDependencies.kotlin
+    //google support dependencies
+    implementation googlePlayDependencies.appCompat
+    implementation googlePlayDependencies.constraint_layout
+    implementation googlePlayDependencies.supportV4
+    implementation googlePlayDependencies.recyclerview
+    implementation googlePlayDependencies.cardview
+    implementation googlePlayDependencies.design
+    implementation googlePlayDependencies.cardView
+    //network library
+    implementation extraDependencies.retrofit
+    implementation extraDependencies.retrofitGson
+
+    implementation extraDependencies.okhttp3
+    implementation extraDependencies.okhttp3Url
+    implementation extraDependencies.glide
+
+    implementation extraDependencies.coreJackson;
+    implementation extraDependencies.jacksonAnnotation;
+    implementation extraDependencies.jacksonDatabind;
+
+    //custom font library
+    implementation extraDependencies.calligraphy
+    implementation extraDependencies.mkloader
+
+    //dagger dependencies
+    implementation archCoreDependencies.runtime
+    implementation archCoreDependencies.extensions
+    annotationProcessor archCoreDependencies.compiler
+
+    implementation archCoreDependencies.dagger
+    implementation archCoreDependencies.daggerandroid
+    implementation archCoreDependencies.daggerandroidsupport
+    annotationProcessor archCoreDependencies.daggercompiler
+    annotationProcessor archCoreDependencies.daggerandroidprocessor
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}

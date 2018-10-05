@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">MVVMAndroid</string>
+
+    <!--Header Title-->
+    <string name="title_participant">Participant and Test Selection</string>
+    <string name="title_category">Category</string>
+    <string name="title_type">Type</string>
+    <string name="start_session">Start Session</string>
+    <string name="title_word">Word Test</string>
+    <string name="title_picture">Picture Test</string>
+    <string name="title_sentence">Sentence Test</string>
+
+
+    <!--Button -->
+    <string name="btn_back">Back</string>
+    <string name="btn_ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_retrieve_tesr">Retrieve Tests</string>
+    <string name="btn_start_test">Start Test</string>
+    <string name="btn_word">Word Test</string>
+    <string name="btn_picture">Picture Test</string>
+    <string name="btn_sentence">Sentence Test</string>
+    <string name="btn_assesment">Start Assesment</string>
+    <string name="btn_training">Start Training</string>
+    <string name="btn_category">Start Category Test</string>
+    <string name="btn_left">E (Left)</string>
+    <string name="btn_right">F (Right)</string>
+    <string name="btn_related">Related</string>
+    <string name="btn_unrelated">Unrelated</string>
+    <string name="btn_type_of_test">Select type of test</string>
+    <string name="btn_forgot_password"><u>Forgot your password?</u></string>
+    <!--Label-->
+    <string name="lbl_plus">+</string>
+    <string name="lbl_or">or</string>
+
+    <!--Alert message-->
+    <string name="dialog_title_message">Message</string>
+    <string name="please_wait">Please wait</string>
+    <string name="start_session_title">Cognitive Bias Modification for </string>
+    <string name="start_session_btn">Start Session</string>
+    <string name="test_complete_dialog_message">Thank you. You have completed the session</string>
+    <string name="test_not_available_dialog_message">Test not available</string>
+
+    <string name="correct_message">You are correct</string>
+    <string name="incorrect_message">You are incorrect</string>
+
+
+    <!--Hint Input box-->
+    <string name="hint_participant_id">Enter participant ID</string>
+
+
+    <!--error empty field-->
+    <string name="error_empty_participant">Please enter participant id.</string>
+
+
+    <!--error message-->
+    <string name="error_no_internet">No internet connectivity. Please check your network connection.</string>
+    <string name="error_no_data">This participant has no tests available.</string>
+    <string name="error_start_session">Something went wrong. Please try again.</string>
+
+    <!--Login Screen-->
+    <string name="title_hello">HELLO!</string>
+    <string name="subtitle_login">Sign in with your credentials to login</string>
+    <string name="title_user_name">User Name</string>
+    <string name="title_password">Password</string>
+
+
+    <string name="word_instruction"> A. Prepare your thumbs at the bottom of the screen over the \'Start Session\' button holding your phone in both hands.\n
+B. Click the ‘Start Session’ button to begin.\n
+C. During the program, you briefly see a plus (+) sign on screen, followed by a pair of words and finally either the letter \‘E\’ or \‘F\’.  When the letter ‘\E\’ appears, tap on the E (left) button.  When the letter ‘\F\’ appears, tap on the F (right) button.\n
+D. After you tapped either the letter E or F, a plus sign (+) comes up again indicating that a new word pair is about to appear.\n
+E. During the course of the session, keep your attention focused on the words that appears at the top of the screen and hit either E or F with your thumbs to move to next word pair.\n
+F. There are 240 word pairs to go through; it takes between 8-10 min to go through the session.\n\n
+
+
+Work as accurately and as quickly as you can.  Remember to tap on the response areas during the entire program.  If you tap outside the response area, the program will not register your response.</string>
+    <string name="sentence_instruction">A. Keep your index finger active.\n
+         B. Click the \'Start Session\' button to begin.\n
+         C. During the program, you briefly see a plus (+) sign on screen, followed by a sentence then a word will appear.  Please select if this word is  \'unrelated\' or \'related\'.\n
+         D. After you selected either \'unrelated\' or \'related\' a plus sign (+) comes up again indicating that a new sentence is about to appear.\n
+         E. During the course of the program, keep your attention focused on the screen\n
+         F. Work as accurately and as quickly as you can. Remember to keep selecting \'unrelated\' or \'related\' during the entire program. If you don\'t the program will not register your response. \n</string>
+
+
+    <string name="picture_instruction">A. Prepare your thumbs at the bottom of the screen over the \'Start Session\' button holding your phone in upright (portrait position) in both hands.\n
+        B. Click the \'Start Session\' button to begin.\n
+        C. During the program, you briefly see a plus (+) sign on screen, followed by a pair of photos and finally either the letter \'E\' or \'F\'.  When the letter \'E\' appears, tap on the E (left) button.  When the letter \'F\' appears, tap on the F (right) button.\n
+        D. After you clicked on \'E\'  using the left mouse button or \'F\' using the right mouse button a plus sign (+) comes up again indicating that a pair of photos is about to appear.\n
+        E. During the course of the session, keep your attention focused on the screen.\n
+        F. There are 160 photo pairs to go through; it takes between 8-10 min to go through the session.\n
+        \n
+        Work as accurately and as quickly as you can.  Remember to tap on the response areas during the entire program.  If you tap outside the response area, the program will not register your response.\n</string>
+    <string name="msg_plz_wait">Please wait...</string>
+    <string name="con_network_error">network failed</string>
+
+
+</resources>

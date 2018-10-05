@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorToolbar">#C6C6C6</color>
+    <color name="colorStartTestBtn">#1563B5</color>
+    <color name="colorTestType">#EFAD4D</color>
+    <color name="colorRetrieveTest">#65B409</color>
+    <color name="colorHeaderBackground">#F7F7F7</color>
+
+    <color name="transparent_header_bg">#CCCCCCCC</color>
+    <color name="blue">#144686</color>
+    <color name="blue_text">#3eabde</color>
+    <color name="blue_text_dark">#3799c7</color>
+    <color name="blue_bg_drawable">#d8eef8</color>
+    <color name="gray">#666666</color>
+    <color name="graylight">#CCCCCC</color>
+    <color name="graylightest">#A0CCCCCC</color>
+    <color name="light_gray">#f2f2f2</color>
+    <color name="c_videolist_text_description">#959595</color>
+    <color name="gray2">#aaaaaa</color>
+    <color name="lightgrey">#E8E8E8</color>
+    <color name="grey_text">#606060</color>
+    <color name="grey_gradient_start">#CBCCCE</color>
+    <color name="grey_gradient_end">#8F8F8F</color>
+    <color name="green">#7CAD28</color>
+    <color name="trans_bg">#D9000000</color>
+    <color name="trans_25_bg">#80000000</color>
+    <color name="c_profile_text_small_text">#606872</color>
+    <color name="ptr_color_1">#69b8d6</color>
+    <color name="ptr_color_2">#acdabc</color>
+    <color name="ptr_color_3">#a397b6</color>
+    <color name="ptr_color_4">#f3b276</color>
+    <color name="white_50_alpha">#80FFFFFF</color>
+    <color name="white_10_alpha">#40FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#c22e13</color>
+    <color name="pink">#ff66b2</color>
+    <color name="color_invite_email_bg">#69b8d6</color>
+    <color name="color_invite_sms_bg">#0bd318</color>
+    <color name="color_invite_email_bg_pressed">#5ea5c0</color>
+    <color name="color_invite_sms_bg_pressed">#09bd15</color>
+    <color name="color_invite_bg">#eaeaea</color>
+    <color name="color_offer_detail_title">#333333</color>
+    <color name="color_offer_detail_special_terms">#999999</color>
+    <color name="black_trans_50">#80000000</color>
+    <color name="gray3">#7C7C7C</color>
+    <color name="yellow">#ffff66</color>
+    <color name="rate_app_btn_color">#3e819e</color>
+    <color name="blue_dark">#3393ff</color>
+
+
+    <!-- Colors used in the app. Replace each components color code with newer ones to change the design accordingly.
+    Many of the components below have same color code. They have been written separately for the ease of redesign -->
+
+    <!-- Common -->
+    <color name="c_cyan_blue">#157cfc</color>
+    <color name="c_divider_gray">#999999</color>
+    <color name="c_blue_trans_button">#34AADC</color>
+    <color name="c_trans_bg_90">#D9000000</color>
+
+    <!-- Side Menu Design Colors -->
+
+
+    <!-- Video List Design Colors -->
+
+
+    <!-- Landscape FullScreen Message Views Screen Design Colors -->
+    <color name="c_land_text_gray_text">#606872</color>
+    <color name="c_land_text_next_video_title">#999999</color>
+    <color name="c_land_text_next_video_desc">#333333</color>
+    <color name="c_land_text_small_number">#999999</color>
+
+    <!-- UserStatusResponseBean Profile Screen Design Colors -->
+
+    <!-- Splash -->
+    <color name="c_blue_background">#154688</color>
+
+    <!-- Welcomepager -->
+
+    <color name="progress_start">#D2FF9E</color>
+    <color name="progress_center">#84C636</color>
+    <color name="progress_end">#57B31B</color>
+    <!--All Colors for the Recents Activities required-->
+    <color name="c_tab_selector">#34AADC</color>
+    <color name="c_shop_color">#34AADC</color>
+
+
+    <color name="c_tab_text_unselected">#999999</color>
+    <color name="c_line_view">#CCCCCC</color>
+    <color name="c_date">#9A9B9E</color>
+    <color name="c_row_text_description">#333333</color>
+    <color name="c_date_background">#F0F0F0</color>
+    <color name="c_pullup_textcolor">#868686</color>
+
+
+    <color name="c_app_update_bg">#71bcd7</color>
+
+    <color name="c_coach_mark_purple">#a79bb9</color>
+    <color name="c_coach_mark_yellow">#f4b301</color>
+    <color name="c_coach_mark_green">#9acda8</color>
+    <color name="c_coach_mark_pink">#d9887d</color>
+
+    <color name="toolbar_primary_color">#34AADC</color>
+    <color name="toolbar_secondary_color">#2a9ccd</color>
+    <color name="shop_detail_text_color">#6D6D72</color>
+
+    <color name="purple">#7647a2</color>
+    <color name="fav_blue">#D91c79a1</color>
+
+    <color name="colorBottomSelected">#34AADC</color>
+
+    <color name="colorHelloTxt">#25265e</color>
+    <color name="colorLoginSubTitle">#262628</color>
+
+    <color name="colorLoginStart">#00cdff</color>
+    <color name="colorLoginEnd">#009eff</color>
+    <color name="colorPopStart">#fda3b2</color>
+    <color name="colorCrossStart">#fd859a</color>
+    <color name="colorCrossEnd">#ff3951</color>
+    <color name="colorPopEnd">#fb586c</color>
+    <color name="colorTitleUserName">#a2a2a2</color>
+    <color name="colorEdtBackground">#f5f5f5</color>
+    <color name="colorForgotPassword">#262628</color>
+    <color name="colorCursor">#933B05</color>
+
+
+</resources>
