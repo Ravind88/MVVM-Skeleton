@@ -18,7 +18,7 @@ import skeleton.maurya.com.mvvmskeleton.BuildConfig;
 import skeleton.maurya.com.mvvmskeleton.di.AppInjector;
 
 /**
- * Created by jeetendrapal on 12/9/18.
+ * contains all utility functions which are used in application.
  */
 public class GlobalUtility {
 

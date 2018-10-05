@@ -12,6 +12,10 @@ import java.util.regex.Pattern;
 
 import retrofit2.Response;
 
+/**
+ * user to parse the response from server and add status code according to our business logic at app end.
+ * @param <T> Generic response from server i.e Json format
+ */
 public class ApiResponse<T> {
     private static final Pattern LINK_PATTERN = Pattern
             .compile("<([^>]*)>[\\s]*;[\\s]*rel=\"([a-zA-Z0-9]+)\"");

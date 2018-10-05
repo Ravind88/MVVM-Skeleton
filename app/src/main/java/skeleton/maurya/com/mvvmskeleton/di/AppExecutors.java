@@ -1,7 +1,7 @@
 package skeleton.maurya.com.mvvmskeleton.di;
 
 /**
- *
+ * used to run the task on background or foreground.
  */
 import android.os.Handler;
 import android.os.Looper;

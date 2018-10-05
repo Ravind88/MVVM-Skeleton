@@ -21,6 +21,9 @@ import skeleton.maurya.com.mvvmskeleton.model.appservices.ApiServices;
 import skeleton.maurya.com.mvvmskeleton.model.appservices.LiveDataCallAdapterFactory;
 import skeleton.maurya.com.mvvmskeleton.model.appservices.ToStringConverter;
 
+/**
+ * used for provide the Injection and create an optimal object in th application via dagger
+ */
 @Module(includes = ViewModelModule.class)
 class AppModule {
 

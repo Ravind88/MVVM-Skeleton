@@ -20,6 +20,12 @@ import skeleton.maurya.com.mvvmskeleton.model.appservices.Resource;
 import skeleton.maurya.com.mvvmskeleton.utils.GlobalUtility;
 import skeleton.maurya.com.mvvmskeleton.view.common.DialogType;
 
+/**
+ * deal with api library and provide the call backs for api response
+ * It also handles internet check and provide live data for calling point.
+ * @param <ResultType> custom bean for response
+ * @param <RequestType> custom bean/primitive data source for  request
+ */
 public abstract class NetworkBoundResource<ResultType, RequestType> {
     private final AppExecutors appExecutors;
     private final MediatorLiveData<Resource<ResultType>> result = new MediatorLiveData<>();

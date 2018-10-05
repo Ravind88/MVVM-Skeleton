@@ -1,4 +1,4 @@
-package com.icehousecorp.rogersandroid.view.common;
+package skeleton.maurya.com.mvvmskeleton.view.common;
 
 import android.databinding.ViewDataBinding;
 

@@ -6,7 +6,6 @@ import android.app.Fragment;
 import android.app.Service;
 import android.content.BroadcastReceiver;
 
-
 import javax.inject.Inject;
 
 import dagger.android.AndroidInjector;
@@ -16,7 +15,6 @@ import dagger.android.HasBroadcastReceiverInjector;
 import dagger.android.HasFragmentInjector;
 import dagger.android.HasServiceInjector;
 import skeleton.maurya.com.mvvmskeleton.di.AppInjector;
-import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 
 public class MVVMApplication extends Application implements HasActivityInjector, HasServiceInjector, HasBroadcastReceiverInjector, HasFragmentInjector {
 

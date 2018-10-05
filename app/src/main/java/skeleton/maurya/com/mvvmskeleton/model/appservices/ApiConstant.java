@@ -1,7 +1,7 @@
 package skeleton.maurya.com.mvvmskeleton.model.appservices;
 
 /**
- *
+ * All api constants are declared here.
  */
 public class ApiConstant {
 

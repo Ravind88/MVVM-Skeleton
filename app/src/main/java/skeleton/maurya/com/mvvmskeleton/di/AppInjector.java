@@ -15,6 +15,10 @@ import dagger.android.support.AndroidSupportInjection;
 import dagger.android.support.HasSupportFragmentInjector;
 import skeleton.maurya.com.mvvmskeleton.MVVMApplication;
 
+/**
+ * will provide the ability to inject into the application and use globally  to Activity via dragger
+ * Its used to remove the dependency inversion.
+ */
 @Singleton
 public class AppInjector {
     private static Activity mActivity = null;

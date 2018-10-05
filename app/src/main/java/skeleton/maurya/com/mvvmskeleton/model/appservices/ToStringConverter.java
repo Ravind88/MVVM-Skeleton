@@ -10,6 +10,10 @@ import okhttp3.ResponseBody;
 import retrofit2.Converter;
 import retrofit2.Retrofit;
 
+/**
+ * used to convert response into string i.e string convector factory.
+ * currently this factory is use with retrofit networking library.
+ */
 public class ToStringConverter extends Converter.Factory {
 
     private static final MediaType MEDIA_TYPE = MediaType.parse("application/x-www-form-urlencoded");

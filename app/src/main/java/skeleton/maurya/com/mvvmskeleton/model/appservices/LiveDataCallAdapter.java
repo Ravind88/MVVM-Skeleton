@@ -9,7 +9,6 @@ import retrofit2.Call;
 import retrofit2.CallAdapter;
 import retrofit2.Callback;
 import retrofit2.Response;
-import skeleton.maurya.com.mvvmskeleton.model.appservices.ApiResponse;
 
 public class LiveDataCallAdapter <R> implements CallAdapter<R, LiveData<ApiResponse<R>>> {
     private final Type responseType;

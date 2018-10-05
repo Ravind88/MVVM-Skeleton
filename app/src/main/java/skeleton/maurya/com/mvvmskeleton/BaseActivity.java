@@ -13,18 +13,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 
-import com.icehousecorp.rogersandroid.view.common.AlertDialogListner;
-import com.icehousecorp.rogersandroid.view.common.BaseInterface;
-import com.icehousecorp.rogersandroid.view.common.OnFragmentListner;
-
 import javax.inject.Inject;
 
 import dagger.android.AndroidInjection;
 import skeleton.maurya.com.mvvmskeleton.di.Injectable;
 import skeleton.maurya.com.mvvmskeleton.model.repository.AlertMessage;
+import skeleton.maurya.com.mvvmskeleton.view.common.AlertDialogListner;
+import skeleton.maurya.com.mvvmskeleton.view.common.BaseInterface;
 import skeleton.maurya.com.mvvmskeleton.view.common.DialogActionListner;
 import skeleton.maurya.com.mvvmskeleton.view.common.DialogType;
 import skeleton.maurya.com.mvvmskeleton.view.common.MessageDialog;
+import skeleton.maurya.com.mvvmskeleton.view.common.OnFragmentListner;
 import skeleton.maurya.com.mvvmskeleton.view.common.ProgressDialogs;
 //import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 

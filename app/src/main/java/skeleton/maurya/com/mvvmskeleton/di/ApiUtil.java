@@ -1,7 +1,7 @@
 package skeleton.maurya.com.mvvmskeleton.di;
 
 /**
- *
+ * convert normal data to live data
  */
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;

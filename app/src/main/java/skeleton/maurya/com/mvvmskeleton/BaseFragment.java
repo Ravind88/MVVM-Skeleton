@@ -15,16 +15,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.icehousecorp.rogersandroid.view.common.AlertDialogListner;
-import com.icehousecorp.rogersandroid.view.common.OnFragmentListner;
 
 import javax.inject.Inject;
 
 import skeleton.maurya.com.mvvmskeleton.di.Injectable;
 import skeleton.maurya.com.mvvmskeleton.model.repository.AlertMessage;
+import skeleton.maurya.com.mvvmskeleton.view.common.AlertDialogListner;
 import skeleton.maurya.com.mvvmskeleton.view.common.DialogActionListner;
 import skeleton.maurya.com.mvvmskeleton.view.common.DialogType;
 import skeleton.maurya.com.mvvmskeleton.view.common.MessageDialog;
+import skeleton.maurya.com.mvvmskeleton.view.common.OnFragmentListner;
 
 /**
  * base fragment for other fragment

@@ -10,7 +10,7 @@ import javax.inject.Inject;
 import skeleton.maurya.com.mvvmskeleton.di.AppInjector;
 
 /**
- * Created by jeetendrapal on 11/9/18.
+ * used to switched from on fragment to another i.e navigate from one to another
  */
 public class NavigationController {
     private Activity activity;

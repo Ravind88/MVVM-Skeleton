@@ -1,7 +1,7 @@
 package skeleton.maurya.com.mvvmskeleton.utils;
 
 /**
- * Created by jeetendrapal on 17/9/18.
+ * These constants are used for transfer data from one view to another.
  */
 public class IntentKeyPoolConstant {
 

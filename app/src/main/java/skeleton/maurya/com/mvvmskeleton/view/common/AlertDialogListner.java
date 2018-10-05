@@ -1,4 +1,4 @@
-package com.icehousecorp.rogersandroid.view.common;
+package skeleton.maurya.com.mvvmskeleton.view.common;
 
 /**
  * AlertDialogListner is used perform call back action on click of
