@@ -28,7 +28,8 @@ import android.support.annotation.WorkerThread;
 import skeleton.maurya.com.mvvmskeleton.di.AppExecutors;
 
 /**
- * A generic class that can provide a resource backed by network only.
+ * A generic class that can provide data to calling party on local db and then update with latest data from server and gain
+ * provide to callback to calling party.
  *
  * @param <ResultType>
  * @param <RequestType>

@@ -1,7 +1,7 @@
 package skeleton.maurya.com.mvvmskeleton.model.repository.remote;
 
 /**
- *
+ * used to parse data from network , check connectivity and provide response call back from server.
  */
 
 import android.arch.lifecycle.LiveData;
