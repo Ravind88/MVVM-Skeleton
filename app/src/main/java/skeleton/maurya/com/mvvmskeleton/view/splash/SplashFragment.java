@@ -1,11 +1,9 @@
 package skeleton.maurya.com.mvvmskeleton.view.splash;
 
-import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProvider;
 import android.arch.lifecycle.ViewModelProviders;
 import android.databinding.ViewDataBinding;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.View;
 
 
@@ -14,8 +12,6 @@ import javax.inject.Inject;
 import skeleton.maurya.com.mvvmskeleton.BaseFragment;
 import skeleton.maurya.com.mvvmskeleton.R;
 import skeleton.maurya.com.mvvmskeleton.databinding.FrmSplashBinding;
-import skeleton.maurya.com.mvvmskeleton.model.appservices.Resource;
-import skeleton.maurya.com.mvvmskeleton.model.repository.modal.CheckUserType;
 import skeleton.maurya.com.mvvmskeleton.view.common.NavigationController;
 import skeleton.maurya.com.mvvmskeleton.viewModel.splash.SplashViewModel;
 

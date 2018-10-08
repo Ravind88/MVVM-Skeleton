@@ -1,14 +1,13 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    
+
     repositories {
         google()
         jcenter()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.1.2'
-        
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -35,7 +34,7 @@ ext {
     retrofitVersion = '2.3.0'
     okhttp3Version = '3.8.0'
     calligraphyVersion = '2.+'
-
+    ext.arch_version = '1.0.0-rc1'
 
     extraDependencies = [
 //            kotlin           : "org.jetbrains.kotlin:kotlin-stdlib-jre7:${kotlin_version}",
@@ -51,6 +50,7 @@ coreJackson      : "com.fasterxml.jackson.core:jackson-core:${coreJackson}",
 jacksonAnnotation: "com.fasterxml.jackson.core:jackson-annotations:${coreJackson}",
 glide            : "com.github.bumptech.glide:glide:${glideVersion}",
 jacksonDatabind  : "com.fasterxml.jackson.core:jackson-databind:${coreJackson}",
+
     ]
 
     googlePlayDependencies = [
@@ -67,6 +67,7 @@ jacksonDatabind  : "com.fasterxml.jackson.core:jackson-databind:${coreJackson}",
             runtime               : "android.arch.lifecycle:runtime:${liveDataVersion}",
             extensions            : "android.arch.lifecycle:extensions:${liveDataVersion}",
             compiler              : "android.arch.lifecycle:compiler:${liveDataVersion}",
+            roomDatabase          : "android.arch.persistence.room:runtime:${arch_version}",
 
             dagger                : "com.google.dagger:dagger:${daggerVersion}",
             daggerandroid         : "com.google.dagger:dagger-android:${daggerVersion}",

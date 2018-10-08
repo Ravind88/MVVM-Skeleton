@@ -1,11 +1,11 @@
-package skeleton.maurya.com.mvvmskeleton.model.appservices;
+package skeleton.maurya.com.mvvmskeleton.model.repository.remote;
 
 import android.arch.lifecycle.LiveData;
 
 import retrofit2.http.GET;
 import retrofit2.http.Headers;
 import retrofit2.http.Path;
-import skeleton.maurya.com.mvvmskeleton.model.repository.modal.CheckUserType;
+import skeleton.maurya.com.mvvmskeleton.model.repository.Pojo.CheckUserType;
 
 /**
  * declare all the api method and with their method type, this interface will generate the api call.

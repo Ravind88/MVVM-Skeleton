@@ -1,4 +1,4 @@
-package skeleton.maurya.com.mvvmskeleton.model.appservices;
+package skeleton.maurya.com.mvvmskeleton.model.repository.remote;
 
 import android.arch.lifecycle.LiveData;
 

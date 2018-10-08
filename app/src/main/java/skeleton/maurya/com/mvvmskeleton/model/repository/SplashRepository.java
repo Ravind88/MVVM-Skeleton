@@ -6,11 +6,11 @@ import android.support.annotation.NonNull;
 import javax.inject.Inject;
 
 import skeleton.maurya.com.mvvmskeleton.di.AppExecutors;
-import skeleton.maurya.com.mvvmskeleton.di.NetworkBoundResource;
-import skeleton.maurya.com.mvvmskeleton.model.appservices.ApiResponse;
-import skeleton.maurya.com.mvvmskeleton.model.appservices.ApiServices;
-import skeleton.maurya.com.mvvmskeleton.model.appservices.Resource;
-import skeleton.maurya.com.mvvmskeleton.model.repository.modal.CheckUserType;
+import skeleton.maurya.com.mvvmskeleton.model.repository.remote.NetworkBoundResource;
+import skeleton.maurya.com.mvvmskeleton.model.repository.remote.ApiResponse;
+import skeleton.maurya.com.mvvmskeleton.model.repository.remote.ApiServices;
+import skeleton.maurya.com.mvvmskeleton.model.repository.remote.Resource;
+import skeleton.maurya.com.mvvmskeleton.model.repository.Pojo.CheckUserType;
 
 /**
  *

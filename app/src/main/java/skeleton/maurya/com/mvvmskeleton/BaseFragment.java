@@ -19,7 +19,7 @@ import android.view.ViewGroup;
 import javax.inject.Inject;
 
 import skeleton.maurya.com.mvvmskeleton.di.Injectable;
-import skeleton.maurya.com.mvvmskeleton.model.repository.AlertMessage;
+import skeleton.maurya.com.mvvmskeleton.model.repository.Pojo.AlertMessage;
 import skeleton.maurya.com.mvvmskeleton.view.common.AlertDialogListner;
 import skeleton.maurya.com.mvvmskeleton.view.common.DialogActionListner;
 import skeleton.maurya.com.mvvmskeleton.view.common.DialogType;

@@ -1,4 +1,4 @@
-package skeleton.maurya.com.mvvmskeleton.model.appservices;
+package skeleton.maurya.com.mvvmskeleton.model.repository.remote;
 
 import java.io.IOException;
 import java.lang.annotation.Annotation;

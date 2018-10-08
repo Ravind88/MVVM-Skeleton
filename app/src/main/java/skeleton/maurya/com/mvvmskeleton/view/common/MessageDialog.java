@@ -10,7 +10,7 @@ import javax.inject.Inject;
 
 import skeleton.maurya.com.mvvmskeleton.R;
 import skeleton.maurya.com.mvvmskeleton.di.AppInjector;
-import skeleton.maurya.com.mvvmskeleton.model.repository.AlertMessage;
+import skeleton.maurya.com.mvvmskeleton.model.repository.Pojo.AlertMessage;
 
 
 /**

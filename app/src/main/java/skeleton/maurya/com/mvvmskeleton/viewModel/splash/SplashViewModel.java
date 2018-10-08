@@ -10,9 +10,9 @@ import javax.inject.Inject;
 
 import skeleton.maurya.com.mvvmskeleton.di.AbsentLiveData;
 import skeleton.maurya.com.mvvmskeleton.di.Objects;
-import skeleton.maurya.com.mvvmskeleton.model.appservices.Resource;
+import skeleton.maurya.com.mvvmskeleton.model.repository.remote.Resource;
 import skeleton.maurya.com.mvvmskeleton.model.repository.SplashRepository;
-import skeleton.maurya.com.mvvmskeleton.model.repository.modal.CheckUserType;
+import skeleton.maurya.com.mvvmskeleton.model.repository.Pojo.CheckUserType;
 
 /**
  *

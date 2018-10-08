@@ -1,6 +1,9 @@
 package skeleton.maurya.com.mvvmskeleton.di;
 
 
+import android.app.Application;
+import android.arch.persistence.room.Room;
+
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -16,10 +19,13 @@ import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import skeleton.maurya.com.mvvmskeleton.BuildConfig;
-import skeleton.maurya.com.mvvmskeleton.model.appservices.ApiConstant;
-import skeleton.maurya.com.mvvmskeleton.model.appservices.ApiServices;
-import skeleton.maurya.com.mvvmskeleton.model.appservices.LiveDataCallAdapterFactory;
-import skeleton.maurya.com.mvvmskeleton.model.appservices.ToStringConverter;
+import skeleton.maurya.com.mvvmskeleton.model.repository.local.AppDb;
+import skeleton.maurya.com.mvvmskeleton.model.repository.local.DbConstant;
+import skeleton.maurya.com.mvvmskeleton.model.repository.local.dao.IContactDao;
+import skeleton.maurya.com.mvvmskeleton.model.repository.remote.ApiConstant;
+import skeleton.maurya.com.mvvmskeleton.model.repository.remote.ApiServices;
+import skeleton.maurya.com.mvvmskeleton.model.repository.remote.LiveDataCallAdapterFactory;
+import skeleton.maurya.com.mvvmskeleton.model.repository.remote.ToStringConverter;
 
 /**
  * used for provide the Injection and create an optimal object in th application via dagger
@@ -56,6 +62,19 @@ class AppModule {
                 .client(httpClient.build())
                 .build()
                 .create(ApiServices.class);
+    }
+
+
+    @Singleton
+    @Provides
+    AppDb provideDb(Application app) {
+        return Room.databaseBuilder(app, AppDb.class, DbConstant.DATABASENAME).fallbackToDestructiveMigration().allowMainThreadQueries().build();
+    }
+
+    @Singleton
+    @Provides
+    IContactDao provideContactDao(AppDb db) {
+        return db.contactDao();
     }
 
 }

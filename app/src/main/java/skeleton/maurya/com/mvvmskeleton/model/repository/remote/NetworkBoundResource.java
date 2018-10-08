@@ -1,4 +1,4 @@
-package skeleton.maurya.com.mvvmskeleton.di;
+package skeleton.maurya.com.mvvmskeleton.model.repository.remote;
 
 /**
  *
@@ -15,15 +15,17 @@ import android.support.annotation.WorkerThread;
 
 import skeleton.maurya.com.mvvmskeleton.BaseActivity;
 import skeleton.maurya.com.mvvmskeleton.R;
-import skeleton.maurya.com.mvvmskeleton.model.appservices.ApiResponse;
-import skeleton.maurya.com.mvvmskeleton.model.appservices.Resource;
+import skeleton.maurya.com.mvvmskeleton.di.ApiUtil;
+import skeleton.maurya.com.mvvmskeleton.di.AppExecutors;
+import skeleton.maurya.com.mvvmskeleton.di.AppInjector;
 import skeleton.maurya.com.mvvmskeleton.utils.GlobalUtility;
 import skeleton.maurya.com.mvvmskeleton.view.common.DialogType;
 
 /**
  * deal with api library and provide the call backs for api response
  * It also handles internet check and provide live data for calling point.
- * @param <ResultType> custom bean for response
+ *
+ * @param <ResultType>  custom bean for response
  * @param <RequestType> custom bean/primitive data source for  request
  */
 public abstract class NetworkBoundResource<ResultType, RequestType> {
@@ -47,7 +49,7 @@ public abstract class NetworkBoundResource<ResultType, RequestType> {
             result.addSource(ABSENT, new Observer<ResultType>() {
                 @Override
                 public void onChanged(@Nullable ResultType resultType) {
-                    result.setValue(Resource.error(AppInjector.getActivity().getResources().getString(R.string.con_network_error), resultType));
+                    result.setValue(Resource.error(AppInjector.getActivity().getResources().getString(R.string.con_network_error), resultType, ApiConstant.NETWORK_STATUS_CODE));
                 }
             });
         }
@@ -62,7 +64,7 @@ public abstract class NetworkBoundResource<ResultType, RequestType> {
         result.addSource(ABSENT, new Observer<ResultType>() {
             @Override
             public void onChanged(@Nullable ResultType resultType) {
-                result.setValue(Resource.loading(resultType));
+                result.setValue(Resource.loading(resultType, ApiConstant.ZERO_STATUS_CODE));
             }
         });
         result.addSource(apiResponse, new Observer<ApiResponse<ResultType>>() {
@@ -81,7 +83,7 @@ public abstract class NetworkBoundResource<ResultType, RequestType> {
                                     result.addSource(ApiUtil.successCall(requestTypeApiResponse.body), new Observer<ResultType>() {
                                         @Override
                                         public void onChanged(@Nullable ResultType resultType) {
-                                            result.setValue(Resource.success(resultType));
+                                            result.setValue(Resource.success(resultType, requestTypeApiResponse.code));
                                             GlobalUtility.showProgress(false, "");
 
                                         }
@@ -96,7 +98,7 @@ public abstract class NetworkBoundResource<ResultType, RequestType> {
                     result.addSource(ABSENT, new Observer<ResultType>() {
                         @Override
                         public void onChanged(@Nullable ResultType resultType) {
-                            result.setValue(Resource.error(requestTypeApiResponse.errorMessage, resultType));
+                            result.setValue(Resource.error(requestTypeApiResponse.errorMessage, resultType, requestTypeApiResponse.code));
                         }
                     });
                 }

@@ -17,7 +17,7 @@ import javax.inject.Inject;
 
 import dagger.android.AndroidInjection;
 import skeleton.maurya.com.mvvmskeleton.di.Injectable;
-import skeleton.maurya.com.mvvmskeleton.model.repository.AlertMessage;
+import skeleton.maurya.com.mvvmskeleton.model.repository.Pojo.AlertMessage;
 import skeleton.maurya.com.mvvmskeleton.view.common.AlertDialogListner;
 import skeleton.maurya.com.mvvmskeleton.view.common.BaseInterface;
 import skeleton.maurya.com.mvvmskeleton.view.common.DialogActionListner;
